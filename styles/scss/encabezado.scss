@@ -1,0 +1,15 @@
+.encabezado {
+  background: #cccccc;
+  margin: 0;
+  padding: 20px;
+
+  &__title {
+    text-align: center;
+    font-size: 50px;
+    color: blueviolet;
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+}

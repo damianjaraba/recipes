@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Comfortaa-Light.woff") format("woff"), url("../fonts/Comfortaa-Light.ttf") format("truetype"), url("../fonts/Comfortaa-Light.svg#Comfortaa-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Comfortaa-Regular.woff") format("woff"), url("../fonts/Comfortaa-Regular.ttf") format("truetype"), url("../fonts/Comfortaa-Regular.svg#Comfortaa-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Comfortaa-Bold.woff") format("woff"), url("../fonts/Comfortaa-Bold.ttf") format("truetype"), url("../fonts/Comfortaa-Bold.svg#Comfortaa-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  background: wheat;
+  color: black;
+  font-family: "Comfortaa";
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenido_principal {
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.contenido_principal__title {
+  font-size: 2rem;
+}
+.contenido_principal__text {
+  padding-bottom: 7px;
+  border-bottom: 5px #dd0000 solid;
+  font-size: 1.3rem;
+}
+
+.navigation {
+  background: #1d8062;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+.navigation__item {
+  list-style-type: none;
+  margin: 5px;
+  padding: 3px;
+}
+.navigation__item--active {
+  background: #5a72db;
+  border-radius: 50px;
+  padding: 5px;
+}
+.navigation__link {
+  color: white;
+  text-decoration: none;
+}
+.navigation__link:hover {
+  font-weight: bold;
+  color: white;
+}
+
+.encabezado {
+  background: #cccccc;
+  margin: 0;
+  padding: 20px;
+}
+.encabezado__title {
+  text-align: center;
+  font-size: 50px;
+  color: blueviolet;
+}
+.encabezado__subtitle {
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

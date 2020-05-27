@@ -1,0 +1,25 @@
+body {
+  background: wheat;
+  color: black;
+  font-family: "Comfortaa";
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenido_principal {
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__text {
+    padding-bottom: 7px;
+    border-bottom: 5px #dd0000 solid;
+    font-size: 1.3rem;
+  }
+}
