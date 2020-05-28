@@ -18,7 +18,7 @@
 }
 body {
   background: #cccccc;
-  color: black;
+  color: #000;
   font-family: "Comfortaa";
   font-size: 18px;
   margin: 0;
@@ -39,6 +39,9 @@ body {
   border-bottom: 5px #dd0000 solid;
   font-size: 1.3rem;
 }
+.main-content__list {
+  line-height: 30px;
+}
 
 .header {
   background-image: url(../images/header.webp);
@@ -50,7 +53,8 @@ body {
 .header__title {
   text-align: center;
   font-size: 50px;
-  color: blueviolet;
+  color: #6918b4;
+  margin-bottom: 5px;
 }
 .header__subtitle {
   text-align: center;
@@ -58,10 +62,11 @@ body {
 
 .navigation {
   background: #1d8062;
-  color: white;
+  color: #ffffff;
   padding: 20px;
+}
+.navigation__list {
   display: flex;
-  justify-content: flex-start;
 }
 .navigation__item {
   list-style-type: none;
@@ -74,12 +79,12 @@ body {
   padding: 5px;
 }
 .navigation__link {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 .navigation__link:hover {
   font-weight: bold;
-  color: white;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */
