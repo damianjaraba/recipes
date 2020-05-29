@@ -1,6 +1,13 @@
-@import "./colors";
-@import "./fonts";
-@import "./core";
-@import "./header";
-@import "./navigation";
-@import "./general";
+// Settings 
+@import "settings/colors";
+@import "settings/variables";
+
+// Core styles
+@import "core/fonts";
+@import "core/core";
+
+// Modules
+@import "modules/header";
+@import "modules/navigation";
+@import "modules/main-content"
+
