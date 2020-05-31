@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Comfortaa";
   src: url("../fonts/Comfortaa-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Comfortaa-Light.woff") format("woff"), url("../fonts/Comfortaa-Light.ttf") format("truetype"), url("../fonts/Comfortaa-Light.svg#Comfortaa-Light") format("svg");
@@ -27,6 +28,48 @@ body {
   font-size: 18px;
   margin: 0;
   padding: 0;
+}
+
+@font-face {
+  font-family: "icon-family";
+  src: url("../font-icons/icon-family.eot?8z0s7n");
+  src: url("../font-icons/icon-family.eot?8z0s7n#iefix") format("embedded-opentype"), url("../font-icons/icon-family.ttf?8z0s7n") format("truetype"), url("../font-icons/icon-family.woff?8z0s7n") format("woff"), url("../font-icons/icon-family.svg?8z0s7n#icon-family") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icon-family" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--youtube:before {
+  content: "";
+}
+
+.icon--pinterest:before {
+  content: "";
+}
+
+.icon--twitter:before {
+  content: "";
+}
+
+.icon--instagram:before {
+  content: "";
+}
+
+.icon--facebook:before {
+  content: "";
 }
 
 .header {
@@ -88,6 +131,23 @@ body {
 }
 .main-content__list {
   line-height: 30px;
+}
+
+.footer {
+  background-color: #1d8062;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin: auto;
+  height: 100px;
+}
+.footer__copy {
+  text-align: center;
+}
+.footer__icon {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

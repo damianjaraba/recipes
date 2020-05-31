@@ -1,18 +1,22 @@
-.footer-container {
+.footer {
   background-color: $footer-bg;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   color: $color-text-footer;
   padding: 5px 10px;
   margin: auto;
   height: 100px;
 
-  &-copy {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+
+  &__copy {
     text-align: center;
   }
-}
 
-.icon {
-  margin-right: 10px;
+  &__icon {
+    margin-right: 10px;
+  }
 }

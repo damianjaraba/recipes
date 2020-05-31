@@ -133,21 +133,23 @@ body {
   line-height: 30px;
 }
 
-.footer-container {
+.footer {
   background-color: #1d8062;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   color: #ffffff;
   padding: 5px 10px;
   margin: auto;
   height: 100px;
 }
-.footer-container-copy {
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.footer__copy {
   text-align: center;
 }
-
-.icon {
+.footer__icon {
   margin-right: 10px;
 }
 
