@@ -8,6 +8,8 @@
   }
 
   &__item {
+    flex-grow: 1;
+    text-align: center;
     list-style-type: none;
     margin: 5px;
     padding: 3px;
@@ -28,9 +30,10 @@
       color: $white;
     }
   }
+}
 
-  &__icon-twitter {
-    color: blue;
-    font-size: 100px;
+@media (max-width: 768px) {
+  .navigation__list {
+    flex-direction: column;
   }
 }

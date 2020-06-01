@@ -1,0 +1,33 @@
+.footer {
+  background-color: $footer-bg;
+  color: $color-text-footer;
+  padding: 0 70px;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px 10px 10px;
+  }
+
+  &__copy {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  &__social-icons {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__social-icons {
+    width: auto;
+  }
+  .footer__container {
+    justify-content: space-between;
+  }
+}

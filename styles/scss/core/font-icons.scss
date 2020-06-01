@@ -1,10 +1,10 @@
 @font-face {
   font-family: "icon-family";
-  src: url("../font-icons/icon-family.eot?gqmtdi");
-  src: url("../font-icons/icon-family.eot?gqmtdi#iefix") format("embedded-opentype"),
-    url("../font-icons/icon-family.ttf?gqmtdi") format("truetype"),
-    url("../font-icons/icon-family.woff?gqmtdi") format("woff"),
-    url("../font-icons/icon-family.svg?gqmtdi#icon-family") format("svg");
+  src: url("../font-icons/icon-family.eot?9lwl4h");
+  src: url("../font-icons/icon-family.eot?9lwl4h#iefix") format("embedded-opentype"),
+    url("../font-icons/icon-family.ttf?9lwl4h") format("truetype"),
+    url("../font-icons/icon-family.woff?9lwl4h") format("woff"),
+    url("../font-icons/icon-family.svg?9lwl4h#icon-family") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,12 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon--twitter:before {
+.icon--menu:before {
+  content: "\e905";
+}
+.icon--youtube:before {
   content: "\e900";
 }
-.icon--instagram:before {
+.icon--pinterest:before {
   content: "\e901";
 }
-.icon--facebook:before {
+.icon--twitter:before {
   content: "\e902";
+}
+.icon--instagram:before {
+  content: "\e903";
+}
+.icon--facebook:before {
+  content: "\e904";
 }
