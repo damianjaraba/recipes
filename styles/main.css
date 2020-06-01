@@ -30,6 +30,10 @@ body {
   font-size: 18px;
 }
 
+img {
+  max-width: 100%;
+}
+
 @font-face {
   font-family: "icon-family";
   src: url("../font-icons/icon-family.eot?9lwl4h");
@@ -97,6 +101,11 @@ body {
   color: #6918b4;
   margin-bottom: 5px;
 }
+@media only screen and (max-width: 767px) {
+  .header__title {
+    font-size: 2.5rem;
+  }
+}
 .header__subtitle {
   text-align: center;
 }
@@ -112,33 +121,11 @@ body {
   display: none;
 }
 
-header label {
-  display: none;
-  width: 70px;
-  padding: 10px;
-}
-
-header label:hover {
-  cursor: pointer;
-  background-color: #006750;
-}
-
 .container {
   width: 95%;
   margin: auto;
 }
 
-@media (max-width: 768px) {
-  .header__title {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 768px) {
-  header label {
-    display: block;
-    position: absolute;
-  }
-}
 .navigation {
   background: #1d8062;
   color: #ffffff;
