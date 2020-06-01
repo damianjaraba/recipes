@@ -1,22 +1,33 @@
 .footer {
   background-color: $footer-bg;
   color: $color-text-footer;
-  padding: 5px 10px;
-  margin: auto;
-  height: 100px;
+  padding: 0 70px;
 
   &__container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    margin: auto;
+    padding: 10px 30px 10px 10px;
   }
 
   &__copy {
-    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
   }
 
-  &__icon {
-    margin-right: 10px;
+  &__social-icons {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__social-icons {
+    width: auto;
+  }
+  .footer__container {
+    justify-content: space-between;
   }
 }

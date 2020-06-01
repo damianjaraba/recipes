@@ -18,6 +18,8 @@
   font-style: normal;
 }
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -26,14 +28,12 @@ body {
   color: #000;
   font-family: "Comfortaa";
   font-size: 18px;
-  margin: 0;
-  padding: 0;
 }
 
 @font-face {
   font-family: "icon-family";
-  src: url("../font-icons/icon-family.eot?8z0s7n");
-  src: url("../font-icons/icon-family.eot?8z0s7n#iefix") format("embedded-opentype"), url("../font-icons/icon-family.ttf?8z0s7n") format("truetype"), url("../font-icons/icon-family.woff?8z0s7n") format("woff"), url("../font-icons/icon-family.svg?8z0s7n#icon-family") format("svg");
+  src: url("../font-icons/icon-family.eot?9lwl4h");
+  src: url("../font-icons/icon-family.eot?9lwl4h#iefix") format("embedded-opentype"), url("../font-icons/icon-family.ttf?9lwl4h") format("truetype"), url("../font-icons/icon-family.woff?9lwl4h") format("woff"), url("../font-icons/icon-family.svg?9lwl4h#icon-family") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -50,6 +50,10 @@ body {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--menu:before {
+  content: "";
 }
 
 .icon--youtube:before {
@@ -73,22 +77,68 @@ body {
 }
 
 .header {
+  width: 100%;
+  height: 250px;
   background-image: url(../images/header.webp);
   background-size: cover;
   background-position: center;
-  margin: 0;
-  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 .header__title {
   text-align: center;
-  font-size: 50px;
+  font-size: 3rem;
   color: #6918b4;
   margin-bottom: 5px;
 }
 .header__subtitle {
   text-align: center;
 }
+.header__icon {
+  font-size: 80px;
+}
+.header__menu {
+  width: 50px;
+  display: none;
+  position: relative;
+}
+.header__btn-menu {
+  display: none;
+}
 
+header label {
+  display: none;
+  width: 70px;
+  padding: 10px;
+}
+
+header label:hover {
+  cursor: pointer;
+  background-color: #006750;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  header label {
+    display: block;
+    position: absolute;
+  }
+}
 .navigation {
   background: #1d8062;
   color: #ffffff;
@@ -98,6 +148,8 @@ body {
   display: flex;
 }
 .navigation__item {
+  flex-grow: 1;
+  text-align: center;
   list-style-type: none;
   margin: 5px;
   padding: 3px;
@@ -116,8 +168,13 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 768px) {
+  .navigation__list {
+    flex-direction: column;
+  }
+}
 .main-content {
-  margin-top: 40px;
+  margin-top: 300px;
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -132,25 +189,43 @@ body {
 .main-content__list {
   line-height: 30px;
 }
+.main-content img {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 500px;
+}
 
 .footer {
   background-color: #1d8062;
   color: #ffffff;
-  padding: 5px 10px;
-  margin: auto;
-  height: 100px;
+  padding: 0 70px;
 }
 .footer__container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  margin: auto;
+  padding: 10px 30px 10px 10px;
 }
 .footer__copy {
-  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
-.footer__icon {
-  margin-right: 10px;
+.footer__social-icons {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  .footer__social-icons {
+    width: auto;
+  }
+
+  .footer__container {
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

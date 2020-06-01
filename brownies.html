@@ -2,30 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recetas de la abuela</title>
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
   </head>
   <body>
-    <header class="header">
-      <h1 class="header__title">Recetas de la abuela</h1>
-      <h2 class="header__subtitle">Deliciosas recetas caseras</h2>
-    </header>
-    <nav class="navigation">
-      <ul class="navigation__list">
-    <li class="navigation__item ">
-      <a class="navigation__link" href="index.html">Home</a>
-    </li>
-    <li class="navigation__item">
-      <a class="navigation__link" href="carne-al-horno.html"
-        >Carne al horno</a
-      >
-    </li>
-    <li class="navigation__item navigation__item--active"">
-      <a class="navigation__link  href="brownies.html">Brownies</a>
-    </li>
-  </ul>
-</nav>
-    
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">Recetas de la abuela</h1>
+        <h2 class="header__subtitle">Deliciosas recetas caseras</h2>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="carne-al-horno.html"
+                >Carne al horno</a
+              >
+            </li>
+            <li class="navigation__item navigation__item--active">
+              <a class="navigation__link" href="brownies.html">Brownies</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
     <div class="main-content">
       <h3 class="main-content__title">Brownies</h3>
@@ -62,15 +64,17 @@
       <div class="footer__container">
         <p class="footer__copy">&copy; 2020. Damian Jaraba</p>
         <div class="footer__social-icons">
-          <i class="icon icon--twitter footer__icon footer__icon-twitter"></i>
-          <i class="icon icon--youtube footer__icon footer__icon-youtube"></i>
+          <i class="icon icon--twitter footer__icon footer__icon--twitter"></i>
+          <i class="icon icon--youtube footer__icon footer__icon--youtube"></i>
           <i
-            class="icon icon--pinterest footer__icon footer__icon-pinterest"
+            class="icon icon--pinterest footer__icon footer__icon--pinterest"
           ></i>
           <i
-            class="icon icon--instagram footer__icon footer__icon-instagram"
+            class="icon icon--instagram footer__icon footer__icon--instagram"
           ></i>
-          <i class="icon icon--facebook footer__icon footer__icon-facebook"></i>
+          <i
+            class="icon icon--facebook footer__icon footer__icon--facebook"
+          ></i>
         </div>
       </div>
     </footer>

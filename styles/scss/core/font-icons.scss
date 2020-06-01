@@ -1,11 +1,10 @@
 @font-face {
   font-family: "icon-family";
-  src: url("../font-icons/icon-family.eot?8z0s7n");
-  src: url("../font-icons/icon-family.eot?8z0s7n#iefix")
-      format("embedded-opentype"),
-    url("../font-icons/icon-family.ttf?8z0s7n") format("truetype"),
-    url("../font-icons/icon-family.woff?8z0s7n") format("woff"),
-    url("../font-icons/icon-family.svg?8z0s7n#icon-family") format("svg");
+  src: url("../font-icons/icon-family.eot?9lwl4h");
+  src: url("../font-icons/icon-family.eot?9lwl4h#iefix") format("embedded-opentype"),
+    url("../font-icons/icon-family.ttf?9lwl4h") format("truetype"),
+    url("../font-icons/icon-family.woff?9lwl4h") format("woff"),
+    url("../font-icons/icon-family.svg?9lwl4h#icon-family") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon--menu:before {
+  content: "\e905";
+}
 .icon--youtube:before {
   content: "\e900";
 }

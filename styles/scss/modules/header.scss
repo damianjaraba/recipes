@@ -1,18 +1,69 @@
 .header {
+  width: 100%;
+  height: 250px;
   background-image: url(../images/header.webp);
   background-size: cover;
   background-position: center;
-  margin: 0;
-  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
 
   &__title {
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
     color: $seance;
     margin-bottom: 5px;
   }
 
   &__subtitle {
     text-align: center;
+  }
+
+  &__icon {
+    font-size: 80px;
+  }
+
+  &__menu {
+    width: 50px;
+    display: none;
+    position: relative;
+  }
+
+  &__btn-menu {
+    display: none;
+  }
+}
+
+header label {
+  display: none;
+  width: 70px;
+  padding: 10px;
+}
+
+header label:hover {
+  cursor: pointer;
+  background-color: $colors-menu;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header label {
+    display: block;
+    position: absolute;
   }
 }
