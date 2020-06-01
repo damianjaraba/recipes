@@ -30,6 +30,10 @@ body {
   font-size: 18px;
 }
 
+img {
+  max-width: 100%;
+}
+
 @font-face {
   font-family: "icon-family";
   src: url("../font-icons/icon-family.eot?9lwl4h");
